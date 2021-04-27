@@ -1,4 +1,4 @@
-package org.example;
+package junit;
 
 /**
  * Hello world!

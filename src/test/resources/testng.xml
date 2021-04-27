@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Sum-Subtract Suite" verbose="1" >
+    <groups></groups>
+    <test name="Addition Calculator Test">
+        <classes>
+            <class name="testng.LongSumCalTest"/>
+        </classes>
+    </test>
+    <test name="Subtract Calculator Test">
+        <classes>
+            <class name="testng.LongSubCalTest"/>
+        </classes>
+    </test>
+</suite>
