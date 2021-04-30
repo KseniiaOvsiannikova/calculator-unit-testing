@@ -13,7 +13,6 @@ public class BaseTest {
         calculator = new Calculator();
     }
 
-
     @AfterClass
     public void tearDown() {
         calculator = null;
