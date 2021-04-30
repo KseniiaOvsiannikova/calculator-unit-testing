@@ -7,10 +7,9 @@ import org.testng.annotations.Test;
 public class LongSubCalTest extends BaseTest{
 
     @Test(dataProvider = "valuesForSubTest")
-    public void minusTest(long a, long b, long expectedValue) throws InterruptedException{
+    public void minusTest(long a, long b, long expectedValue) {
         long result = calculator.sub(a, b);
         Assert.assertEquals(result, expectedValue, "Invalid result of sub operation.");
-        Thread.sleep(1000);
     }
 
     @DataProvider (name = "valuesForSubTest")

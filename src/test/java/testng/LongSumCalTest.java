@@ -7,10 +7,9 @@ import org.testng.annotations.Test;
 public class LongSumCalTest extends BaseTest{
 
     @Test(dataProvider = "valuesForSumTest")
-    public void plusTest(long a, long b, long expectedValue) throws InterruptedException{
+    public void plusTest(long a, long b, long expectedValue) {
         long result = calculator.sum(a, b);
         Assert.assertEquals(result, expectedValue, "Invalid result of sum operation.");
-        Thread.sleep(1000);
     }
 
     @DataProvider(name = "valuesForSumTest")
