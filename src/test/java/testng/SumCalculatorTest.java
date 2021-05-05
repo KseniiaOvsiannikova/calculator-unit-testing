@@ -4,9 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
-
-public class SumCalculatorTest extends BaseTest{
+public class SumCalculatorTest extends BaseCode {
 
     @Test(dataProvider = "valuesForSumTest", groups = {"functionalTest"})
     public void plusTest(long firstValue, long secondValue, long expectedValue) {
@@ -16,7 +14,7 @@ public class SumCalculatorTest extends BaseTest{
 
     @DataProvider(name = "valuesForSumTest")
     public Object[][] sumDataProvider() {
-        return new Object[][] {
+        return new Object[][]{
                 {10, 23, 33},
                 {10, -1, 9},
                 {0, 0, 0},

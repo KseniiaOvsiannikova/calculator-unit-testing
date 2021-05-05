@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class SubCalculatorTest extends BaseTest{
+public class SubCalculatorTest extends BaseCode {
 
     @Test(dataProvider = "valuesForSubTest", groups = {"functionalTest", "smokeTest"})
     public void minusTest(long firstValue, long secondValue, long expectedValue) {
@@ -12,7 +12,7 @@ public class SubCalculatorTest extends BaseTest{
         Assert.assertEquals(actualResult, expectedValue, "Invalid result of sub operation.");
     }
 
-    @DataProvider (name = "valuesForSubTest")
+    @DataProvider(name = "valuesForSubTest")
     public Object[][] subDataProvider() {
         return new Object[][]{
                 {10, 3, 7},
