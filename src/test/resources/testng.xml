@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Sum-Subtract-Multiply Suite" verbose="10" parallel="methods" thread-count="4">
+    <test name="Sum Calculator Test">
+        <groups>
+            <run>
+                <exclude name="functionalTest"/>
+                <include name="smokeTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testng.SumCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="Subtract Calculator Test">
+        <classes>
+            <class name="testng.SubCalculatorTest"/>
+        </classes>
+    </test>
+    <test name="Multiply Calculator Test">
+        <classes>
+            <class name="testng.MultiplyCalculatorTest"/>
+        </classes>
+    </test>
+</suite>
